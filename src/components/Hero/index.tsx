@@ -38,28 +38,26 @@ const Index: FC = () => {
   }, []);
 
   return (
-    <>
-      <section className="hero-section flex relative w-full justify-center items-end bg-light-gray overflow-hidden h-[calc(100vh-80px)]">
-        <div className="flex items-center justify-center">
-          <Image
-            className="min-w-75% max-w-85%"
-            src={HeroImage}
-            alt="Hero image"
-            priority
-          />
-          <OverlayMenu isOpen={isOpen} toggleMenu={toggleMenu} />
-          <div className="hero-infinite-text">
-            <h1>flow Developer - UI/UX Designer - Web Designer</h1>
-          </div>
+    <section className="hero-section flex relative w-full justify-center items-end bg-light-gray overflow-hidden h-[calc(100vh-80px)]">
+      <div className="flex items-center justify-center">
+        <Image
+          className="min-w-75% max-w-85%"
+          src={HeroImage}
+          alt="Hero image"
+          priority
+        />
+        <OverlayMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+        <div className="hero-infinite-text">
+          <h1>flow Developer - UI/UX Designer - Web Designer</h1>
         </div>
-        {showHamburger && (
-          <>
-            <HamburgerButton isOpen={isOpen} onClick={toggleMenu} />
-            {isOpen && <OverlayLink onClick={handleLinkClick} />}
-          </>
-        )}
-      </section>
-    </>
+      </div>
+      {showHamburger && (
+        <>
+          <HamburgerButton isOpen={isOpen} onClick={toggleMenu} />
+          {isOpen && <OverlayLink onClick={handleLinkClick} />}
+        </>
+      )}
+    </section>
   );
 };
 
