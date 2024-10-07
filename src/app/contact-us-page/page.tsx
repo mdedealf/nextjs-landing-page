@@ -1,9 +1,8 @@
-"use client"
+"use client";
 import { FC, useEffect } from "react";
-import Header from "../../components/Header";
-// import Footer from "../../components/Footer";
-import Contact from "../../components/Contact";
-import FooterLink from "../../components/Footer/components/FooterLink";
+import Header from "@/components/Header";
+import Contact from "@/components/Contact";
+import FooterLink from "@/components/Footer/components/FooterLink";
 
 const ContactUs: FC = () => {
   useEffect(() => {
@@ -14,7 +13,7 @@ const ContactUs: FC = () => {
     <>
       <Header bg={"bg-white"} />
       <Contact />
-      <footer className="bg-dark-black flex items-center justify-center px-80px pb-[120px]">
+      <footer className="bg-dark-black flex items-center justify-center px-80px pb-[120px] w-full">
         <FooterLink />
       </footer>
     </>

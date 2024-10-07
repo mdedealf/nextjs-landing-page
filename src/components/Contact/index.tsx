@@ -1,16 +1,16 @@
 import { FC } from "react";
 import ContactForm from "./components/ContactForm";
-import AuthorImage from "../../assets/images/author-profile-large.png";
+import AuthorImage from "@/assets/images/author-profile-large.png";
 import Link from "next/link";
-import { CONTACT_LINKS } from "../../constants/contacLinks";
+import { CONTACT_LINKS } from "@/constants/contacLinks";
 import Image from "next/image";
 
 const Contact: FC = () => {
   return (
-    <section className="flex items-start justify-evenly mx-80px my-160px gap-[120px]">
-      <div className="flex flex-col gap-[56px]">
+    <section className="flex items-start justify-center mx-80px my-160px gap-[12px]">
+      <div className="flex flex-col gap-[56px] basis-[40%]">
         <Image
-          className="min-h-[300px] min-w-300px] object-cover"
+          className="min-h-[300px] min-w-[300px] object-cover"
           src={AuthorImage}
           alt="Author image"
         />

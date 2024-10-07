@@ -1,13 +1,12 @@
 "use client";
 import { FC } from "react";
-import { FORM_INPUT } from "../../../constants/formInputs";
+import { FORM_INPUT } from "@/constants/formInputs";
 import { Form, Formik, FormikHelpers } from "formik";
 import TextInput from "./TextInput/TextInput";
-// import axios from "axios";
 import * as Yup from "yup";
-import { useAppDispatch, useAppSelector } from "../../../hooks/useSelector";
-import { submitForm } from "../../../features/contactUs/contactUsSlicer";
-import { ContactUs } from "../../../types/contactUs";
+import { useAppDispatch, useAppSelector } from "@/hooks/useSelector";
+import { submitForm } from "@/features/contactUs/contactUsSlicer";
+import { ContactUs } from "@/types/contactUs";
 
 const ContactForm: FC = () => {
   const dispatch = useAppDispatch();
@@ -54,7 +53,7 @@ const ContactForm: FC = () => {
   });
 
   return (
-    <div className="flex flex-col items-start gap-32px">
+    <div className="flex flex-col items-start gap-32px w-full basis-[40%]">
       <h1 className="text-60px font-500px leading-72px text-dark-black w-[630px]">
         Let’s build something cool together
       </h1>
