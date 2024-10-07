@@ -39,14 +39,13 @@ const OverlayLink: FC<OverlayLinkProps> = ({ onClick }) => {
         </div>
         <div className="flex text-18px font-400px leading-28px text-off-white gap-32px">
           {SOCIAL_LINKS.map((link, index) => (
-            <>
+            <div key={index}>
               <RouteLink
-                key={index}
                 styles={"text-light-gray hover:text-off-white"}
                 href={link.link}
                 title={link.label}
               />
-            </>
+            </div>
           ))}
         </div>
       </div>
