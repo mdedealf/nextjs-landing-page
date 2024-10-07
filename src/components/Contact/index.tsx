@@ -13,6 +13,7 @@ const Contact: FC = () => {
           className="min-h-[300px] min-w-[300px] object-cover"
           src={AuthorImage}
           alt="Author image"
+          priority
         />
         <div className="flex flex-col gap-40px">
           <div className="flex flex-col gap-[8px]">
