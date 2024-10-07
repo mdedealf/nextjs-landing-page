@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Contact: FC = () => {
   return (
-    <section className="flex items-start justify-center mx-80px my-160px gap-[12px]">
+    <section className="flex items-start justify-center mx-80px mt-80px mb-160px gap-[12px]">
       <div className="flex flex-col gap-[56px] basis-[40%]">
         <Image
           className="min-h-[300px] min-w-[300px] object-cover"
