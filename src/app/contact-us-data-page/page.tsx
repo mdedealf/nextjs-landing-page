@@ -1,3 +1,4 @@
+"use client";
 import { FC, useEffect } from "react";
 import Header from "../../components/Header";
 import { useAppDispatch, useAppSelector } from "../../hooks/useSelector";
