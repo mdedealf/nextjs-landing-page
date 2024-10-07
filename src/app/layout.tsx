@@ -1,7 +1,6 @@
 import { FC, ReactNode } from "react";
 import "./globals.css";
-import Header from "@/components/Header";
-// import ScrollToTop from "@/components/ScrollToTop";
+import ReduxProvider from "@/components/ReduxProvider";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -11,9 +10,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        {/* <ScrollToTop /> */}
-        <Header bg={"bg-light-gray"} />
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

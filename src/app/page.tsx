@@ -1,5 +1,6 @@
 "use client";
 import { FC } from "react";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Portofolio from "@/components/Portofolio";
@@ -10,6 +11,7 @@ import Footer from "@/components/Footer";
 const HomePage: FC = () => {
   return (
     <main>
+      <Header bg={"bg-light-gray"} />
       <Hero />
       <About />
       <Portofolio />

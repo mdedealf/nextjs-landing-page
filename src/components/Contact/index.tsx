@@ -1,14 +1,15 @@
 import { FC } from "react";
 import ContactForm from "./components/ContactForm";
 import AuthorImage from "../../assets/images/author-profile-large.png";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { CONTACT_LINKS } from "../../constants/contacLinks";
+import Image from "next/image";
 
 const Contact: FC = () => {
   return (
     <section className="flex items-start justify-evenly mx-80px my-160px gap-[120px]">
       <div className="flex flex-col gap-[56px]">
-        <img
+        <Image
           className="min-h-[300px] min-w-300px] object-cover"
           src={AuthorImage}
           alt="Author image"
@@ -32,7 +33,7 @@ const Contact: FC = () => {
                 {CONTACT_LINKS.map((link, index) => (
                   <Link
                     className="hover:text-light-gray transition-all"
-                    to={link.link}
+                    href={link.link}
                     key={index}
                   >
                     {link.label}

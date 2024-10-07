@@ -23,7 +23,7 @@ const Contact: FC = () => {
       </div>
       <Link
         className="bg-off-white text-dark-gray px-[48px] py-[24px] rounded-[170px] border-[1px] border-off-white text-[20px] font-500px leading-[21px] hover:bg-light-gray hover:text-dark-black transition-colors"
-        href="contact-us"
+        href="contact-us-page"
       >
         Get in touch
       </Link>

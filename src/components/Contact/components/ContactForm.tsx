@@ -1,3 +1,4 @@
+"use client";
 import { FC } from "react";
 import { FORM_INPUT } from "../../../constants/formInputs";
 import { Form, Formik, FormikHelpers } from "formik";
