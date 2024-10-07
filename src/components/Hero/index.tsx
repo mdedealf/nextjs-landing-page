@@ -45,6 +45,7 @@ const Index: FC = () => {
             className="min-w-75% max-w-85%"
             src={HeroImage}
             alt="Hero image"
+            priority
           />
           <OverlayMenu isOpen={isOpen} toggleMenu={toggleMenu} />
           <div className="hero-infinite-text">

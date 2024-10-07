@@ -11,12 +11,12 @@ const Index: FC = () => {
       </div>
       <div className="flex flex-col text-27px leading-37px font-400px basis-70% gap-y-32px">
         {DUMMY_PROJECTS.map((project, index) => (
-          <>
-            <Project key={index} {...project} />
+          <div key={index}>
+            <Project {...project} />
             {index < DUMMY_PROJECTS.length - 1 && (
               <div className="border-t border-light-gray"></div>
             )}
-          </>
+          </div>
         ))}
       </div>
     </section>

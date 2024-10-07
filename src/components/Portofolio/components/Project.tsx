@@ -8,12 +8,15 @@ const Project: FC<Project> = ({ name, roles, link }) => {
       <div className="flex align-middle justify-between">
         <div className="flex flex-col gap-y-18px">
           <div className="text-60px font-400px">{name}</div>
-          <div className="flex gap-x-6px text-20px font-400px leading-72px">
+          <div className="flex justify-center items-center gap-12px text-20px font-400px leading-72px">
             {roles.map((role, index) => (
-              <>
-                <span key={index}>{role}</span>
+              <div
+                className="flex items-center justify-center gap-12px"
+                key={index}
+              >
+                <span>{role}</span>
                 {index < roles.length - 1 && <span>-</span>}
-              </>
+              </div>
             ))}
           </div>
         </div>
