@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { DUMMY_GALLERY } from "../../../constants/galleryLists";
+import { DUMMY_GALLERY } from "@/constants/galleryLists";
 import GalleryItems from "./GalleryItems";
 
 const Project: FC = () => {
